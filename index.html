@@ -5,105 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Erbil Restaurant - Menu</title>
     <style>
-        body { 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            margin: 0; 
-            background-color: #f4f4f4; 
-            color: #333; 
-        }
-
-        /* HEADER WITH KURDISH FLAG BACKGROUND */
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: #f4f4f4; color: #333; }
+        
         header { 
             background: linear-gradient(to bottom, #ee2222 0%, #ffffff 50%, #007a33 100%);
-            padding: 30px 15px;
-            text-align: center;
-            border-bottom: 5px solid #ffca28;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            padding: 30px 15px; text-align: center; border-bottom: 5px solid #ffca28;
         }
 
         .header-content {
-            background: rgba(255, 255, 255, 0.9); /* White glass effect to see text clearly */
-            padding: 15px;
-            border-radius: 15px;
-            display: inline-block;
-            border: 2px solid #ffca28;
+            background: rgba(255, 255, 255, 0.9); padding: 15px; border-radius: 15px;
+            display: inline-block; border: 2px solid #ffca28;
         }
 
-        h1 { margin: 0; color: #b71c1c; font-size: 2rem; }
+        h1 { margin: 0; color: #b71c1c; font-size: 1.8rem; }
         .address { margin: 5px 0; font-weight: bold; color: #007a33; }
         .hours { margin: 0; font-size: 0.9rem; color: #555; }
 
-        .sun-icon { font-size: 1.5rem; color: #ffca28; margin-bottom: 5px; }
-
-        /* MENU SECTION */
         .container { padding: 15px; max-width: 600px; margin: auto; }
         .category-title { 
-            margin: 25px 0 15px 0; 
-            font-size: 1.4rem; 
-            color: #b71c1c; 
-            border-left: 5px solid #ffca28; 
-            padding-left: 10px;
-            text-transform: uppercase;
+            margin: 25px 0 15px 0; font-size: 1.3rem; color: #b71c1c; 
+            border-left: 5px solid #ffca28; padding-left: 10px; text-transform: uppercase;
         }
 
-        /* FOOD CARD STYLE (Photo next to Text) */
         .food-item {
-            display: flex;
-            background: white;
-            margin-bottom: 15px;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            align-items: center;
+            display: flex; background: white; margin-bottom: 15px; border-radius: 12px;
+            overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); align-items: center;
         }
 
-        .food-img {
-            width: 120px;
-            height: 120px;
-            object-fit: cover; /* Keeps photo from stretching */
-            border-right: 2px solid #ffca28;
-        }
+        .food-img { width: 140px; height: 140px; object-fit: cover; border-right: 2px solid #ffca28; }
+        .food-info { padding: 12px; flex: 1; }
+        .food-name { margin: 0; font-size: 1.1rem; font-weight: bold; }
+        .food-desc { margin: 4px 0; font-size: 0.85rem; color: #666; }
+        .food-price { margin: 0; font-size: 1.2rem; color: #b71c1c; font-weight: bold; }
 
-        .food-info {
-            padding: 15px;
-            flex: 1;
-        }
-
-        .food-name {
-            margin: 0;
-            font-size: 1.1rem;
-            font-weight: bold;
-            color: #121212;
-        }
-
-        .food-desc {
-            margin: 5px 0;
-            font-size: 0.85rem;
-            color: #666;
-            line-height: 1.2;
-        }
-
-        .food-price {
-            margin: 0;
-            font-size: 1.2rem;
-            color: #b71c1c;
-            font-weight: bold;
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px;
-            background: #333;
-            color: white;
-            margin-top: 20px;
-        }
+        footer { text-align: center; padding: 20px; background: #333; color: white; margin-top: 20px; }
     </style>
 </head>
 <body>
 
 <header>
     <div class="header-content">
-        <div class="sun-icon">☀️</div>
         <h1>ERBIL RESTAURANT</h1>
         <p class="address">📍 Filippou 36, Thessaloniki</p>
         <p class="hours">🕒 Open: 11:00 AM - 9:00 PM</p>
@@ -118,7 +59,7 @@
         <img src="kebab.jpg" class="food-img" alt="Kebab">
         <div class="food-info">
             <p class="food-name">Kebab (1 Shish)</p>
-            <p class="food-desc">Authentic grilled lamb kebab with Kurdish spices.</p>
+            <p class="food-desc">Traditional grilled lamb kebab.</p>
             <p class="food-price">€5.00</p>
         </div>
     </div>
@@ -127,7 +68,7 @@
         <img src="chicken.jpg" class="food-img" alt="Chicken BBQ">
         <div class="food-info">
             <p class="food-name">Chicken BBQ (1 Shish)</p>
-            <p class="food-desc">Tender chicken breast marinated and grilled over fire.</p>
+            <p class="food-desc">Marinated chicken breast pieces.</p>
             <p class="food-price">€5.00</p>
         </div>
     </div>
@@ -136,7 +77,7 @@
         <img src="beef_bbq.jpg" class="food-img" alt="Beef BBQ">
         <div class="food-info">
             <p class="food-name">Beef BBQ (1 Shish)</p>
-            <p class="food-desc">Premium beef cuts grilled to perfection.</p>
+            <p class="food-desc">Fresh beef grilled on charcoal.</p>
             <p class="food-price">€5.00</p>
         </div>
     </div>
@@ -147,7 +88,6 @@
         <img src="rice_soup.jpg" class="food-img" alt="Rice and Soup">
         <div class="food-info">
             <p class="food-name">Rice & Any Soup</p>
-            <p class="food-desc">Traditional white rice served with your choice of fresh soup.</p>
             <p class="food-price">€8.00</p>
         </div>
     </div>
@@ -156,7 +96,6 @@
         <img src="rice_chicken.jpg" class="food-img" alt="Rice and Chicken">
         <div class="food-info">
             <p class="food-name">Rice & Grilled Chicken</p>
-            <p class="food-desc">A hearty plate of rice topped with juicy grilled chicken.</p>
             <p class="food-price">€8.00</p>
         </div>
     </div>
@@ -165,8 +104,41 @@
         <img src="biriani.jpg" class="food-img" alt="Biriani">
         <div class="food-info">
             <p class="food-name">Biriani with Soup</p>
-            <p class="food-desc">Spiced Biriani rice served with a side of warm soup.</p>
             <p class="food-price">€5.00</p>
+        </div>
+    </div>
+
+    <div class="food-item">
+        <img src="beef_meat.jpg" class="food-img" alt="Beef Meat">
+        <div class="food-info">
+            <p class="food-name">Beef Meat Plate</p>
+            <p class="food-price">€8.00</p>
+        </div>
+    </div>
+
+    <div class="food-item">
+        <img src="kuftes.jpg" class="food-img" alt="Kuftes">
+        <div class="food-info">
+            <p class="food-name">3 Kuftes Plate</p>
+            <p class="food-price">€9.00</p>
+        </div>
+    </div>
+
+    <div class="category-title">🥣 Sides</div>
+
+    <div class="food-item">
+        <img src="lentil.jpg" class="food-img" alt="Lentil Soup">
+        <div class="food-info">
+            <p class="food-name">Lentil Soup</p>
+            <p class="food-price">€5.00</p>
+        </div>
+    </div>
+
+    <div class="food-item">
+        <img src="falafel.jpg" class="food-img" alt="Falafel">
+        <div class="food-info">
+            <p class="food-name">Falafel Sandwich</p>
+            <p class="food-price">€3.00</p>
         </div>
     </div>
 
@@ -175,8 +147,7 @@
     <div class="food-item">
         <img src="tea.jpg" class="food-img" alt="Tea">
         <div class="food-info">
-            <p class="food-name">Kurdish Black Tea</p>
-            <p class="food-desc">Hot, aromatic traditional tea.</p>
+            <p class="food-name">Kurdish Black Tea (Chai)</p>
             <p class="food-price">€0.50</p>
         </div>
     </div>
@@ -185,8 +156,23 @@
         <img src="airan.jpg" class="food-img" alt="Airan">
         <div class="food-info">
             <p class="food-name">Airan</p>
-            <p class="food-desc">Cold yogurt drink - perfect with BBQ.</p>
             <p class="food-price">€0.50</p>
+        </div>
+    </div>
+
+    <div class="food-item">
+        <img src="water.jpg" class="food-img" alt="Water">
+        <div class="food-info">
+            <p class="food-name">Water</p>
+            <p class="food-price">€0.50</p>
+        </div>
+    </div>
+
+    <div class="food-item">
+        <img src="cola.jpg" class="food-img" alt="Cola">
+        <div class="food-info">
+            <p class="food-name">Cola</p>
+            <p class="food-price">€1.00</p>
         </div>
     </div>
 
@@ -194,7 +180,6 @@
 
 <footer>
     <p>© 2026 Erbil Restaurant - Thessaloniki</p>
-    <p>Bakhair Bait! (Welcome!)</p>
 </footer>
 
 </body>
